@@ -1,0 +1,37 @@
+.isotope-item {
+    z-index: 2;
+	margin: 0px 5px 5px 5px;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.portfolioContainer{ width: 700px; margin: 0 auto;}
+.portfolioContainer img { width:222px; height:160px;}
+.portfolioContainer .isotope-item p {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+	margin: 0;
+}
+.slimScrollBar { background: #fff !important; opacity:0.8 !important; right: 23% !important; cursor:pointer;}

@@ -1,0 +1,389 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+      TechStorm2k15 | BPPIMT
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <!--Including Scripts-->
+    <meta name="description" content="BPPIMT TECHFEST">
+    <meta name="keywords" content="techfest,kolkta,bppimt,techstorm,techstorm2k15,2k15">
+    <!-- Customize MetaTag End -->
+    <link rel="canonical" href="./home.html">
+    <!-- Arbitrary Code -->
+    <!--[if lt IE 9]>
+    <script src="http://static2.cdn.ubi.com/watchdogs/html5shiv.js"></script>
+    <script src="http://static2.cdn.ubi.com/watchdogs/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0;">
+        
+		<link rel="stylesheet" href="css/site.min.css">
+        <link rel="stylesheet" href="css/video.css">
+        <script type="text/javascript" src="js/site.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+      	<script src="js/jquery.min.js"></script>
+      	<script src="js/bootstrap.js"></script>
+        <!-- Customize MetaTag Start -->
+        <script>
+        var WatchDogs = {
+          Settings: {
+            "showAgeGate": false
+          }
+        }
+        </script>
+        <!-- Arbitrary Code End -->
+        <!-- Initialize Flowplayer Key -->
+        <!-- End Initialize Flowplayer Key -->
+        <link href="icon.png" rel="SHORTCUT ICON">
+        <link href="icon.png" rel="icon" type="image/ico">
+        <script src="./home_files/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/scroll.js"></script>
+        <script src="./home_files/new.js" type="text/javascript"></script>    
+
+<style>
+h1{
+    font-family: 'Yesteryear', arial, helvetica, sans;
+}
+     #news-ticker {
+                position: relative;
+                height: 145px;
+                overflow: hidden;
+                width:100%;
+    }
+    #news-ticker li {
+                height:145px;
+                
+                margin-left:17%;
+                clear:both /* This is to ensure that there is no overlap */
+    }
+    .bgvid {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: -1;
+}
+ 
+.tickerBox{
+    display: none;
+    background: rgba(40, 132, 212, 0.3);
+}
+#trailer{
+    margin-left:30%;
+    margin-top:4%;
+
+}
+#eventBox{
+    float:left;
+    margin-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height:90%;
+    width:18%;
+    background:rgba(255,255,255,.9);
+
+}
+.flip-container {
+    perspective: 1000;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back ,.flipper{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+#eContent{
+    width:100%;
+    height:62%;
+    margin-top: 2%;
+    background: rgba(0,0,0,.2);
+
+}
+#siteLogo{
+    background: url("./imgs/2k15.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+#top{
+    z-index: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+#box{
+    float:left;
+    height: 100%;
+    width:12%;
+    margin-left: 2%;
+    display: table-cell; 
+    vertical-align:middle;
+     text-align:center
+}
+
+#boxLeft{
+    float:left;
+    height: 100%;
+    width:7%;
+    margin-left: 2%;
+    display: table-cell; 
+    vertical-align:middle;
+     text-align:center
+}
+.active{
+    background-color: rgba(255,255,255,.1);
+}
+table
+{
+  height:100%;
+  width:100%;
+}
+h2,p{
+  color:white;
+}
+</style>
+</head>
+<body>
+    <div class="bgvid">
+        <video autoplay="" loop="" poster="images/bg_poster.png" id="bgvid" width="100%">
+            <source src="vid.webm" type="video/webm">
+        </video>
+    </div>
+	
+    
+    <div id="top" style="position:fixed;float:left;height:10%;width:100%;top:0px;left:0px;background:rgba(0,0,0,.7);" >
+
+        <div id="boxLeft">
+            <img src="./imgs/ts.png" width="100%" height="100%">
+        </div>   
+        
+        <div id="box">
+            <a href="media.html"><h1 >MEDIA</h1></a>
+        </div>
+        <div id="box">
+            <a href="sponsors.html"><h1>SPONSORS</h1></a>
+        </div>
+        <div id="box"></div>
+        <div id="boxLeft"></div>
+        
+         <div id="box" class="active">
+            <a href="events.html"><h1>EVENTS</h1></a>
+        </div>
+        <div id="box" >
+            <a href="schedule.html"><h1>SCHEDULE</h1></a>
+        </div>
+        
+        
+        <div id="boxLeft" style="margin-right:2%;">
+            <img  src="./imgs/bppimt.png" width="70%" height="100%">
+        </div>  
+
+             <a href="home.html"><div id="siteLogo" style="float:left;position:absolute;height:100%;width:20%;top:0%;left:40%;" ></div> </a>
+                   
+        </div>
+        
+                
+               <div style="position:fixed;left:24%;width:52%;height:20%;bottom:2px;background: rgba(0, 0, 0, 0.4);">
+               <div class="portfolioFilter">
+                    <a href="#" data-filter="*" class="current" style="display:none;">All Categories</a>
+                    <a href="#" data-filter=".people">
+                    <div id="eventBox">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="rovers">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="./imgs/rover.png" height="100%" width="100%">
+                                </div>
+                                <div class="back">
+                                   <img src="./imgs/roverb.jpg" height="100%" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <div id="eventBox">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="gaming">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="./imgs/gaming.png" height="100%" width="100%"></a>
+                                </div>
+                                <div class="back">
+                                   <img src="./imgs/gamingb.jpg" height="100%" width="100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="eventBox">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="quizzard">
+                            <div class="flipper">
+                                <div class="front">
+                                     <img src="./imgs/prof.png" height="100%" width="100%"></a>
+                                </div>
+                                <div class="back">
+                                    <img src="./imgs/profb.jpg" height="100%" width="100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div id="eventBox">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="creativity">
+                            <div class="flipper">
+                                <div class="front">
+                                   <img src="./imgs/creat.png" height="100%" width="100%"></a>
+                                </div>
+                                <div class="back">
+                                   <img src="./imgs/creatb.jpg" height="100%" width="100%"></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="eventBox">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="prog">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="./imgs/prog.png" height="100%" width="100%"></a>
+                                </div>
+                                <div class="back">
+                                   <img src="./imgs/progb.jpg" height="100%" width="100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+               </div>
+			   </div>
+			  <br><br><br>
+               <div id="eContent">
+               <div id="eContent_container">
+               <div class="portfolioContainer">
+                    <div class="objects">
+                        <a href="home.html" class="fancybox fancybox.iframe"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                        <p>Gandu Modon</p>
+                    </div>
+                    
+                    <div class="people places">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                        <p>Gandu Modon1</p>
+                    </div>	
+                
+                    <div class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                        <p>Gandu Modon2</p>
+                    </div>
+                    
+                    <div class="people places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                        <p>Gandu Modon3</p>
+                    </div>
+                    
+                    <div class="objects">
+                        <a href="home.html" class="fancybox fancybox.iframe"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                        <p>Gandu Modon</p>
+                    </div>
+                    
+                    <div class="people places">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                        <p>Gandu Modon1</p>
+                    </div>	
+                
+                    <div class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                        <p>Gandu Modon2</p>
+                    </div>
+                    
+                    <div class="people places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                        <p>Gandu Modon3</p>
+                    </div>
+					
+				</div>
+                </div>
+				</div>
+</div>
+
+<link rel="stylesheet" href="jquery-isotope/css/style.css">
+<script src="jquery-isotope/js/jquery.isotope.js" type="text/javascript"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancyapps/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="fancyapps/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancyapps/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+<link href="slimScroll/examples/libs/prettify/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="slimScroll/examples/libs/prettify/prettify.js"></script>
+<script type="text/javascript" src="slimScroll/jquery.slimscroll.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.fancybox').fancybox();
+	$('#eContent_container').slimscroll({
+	  height: 'auto',
+	  width: '100%'
+	});
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+
+</script>
+            
+            
+           </body>
+           </html>
