@@ -25,8 +25,8 @@
     transition-property: transform, opacity;
 }
 
-.portfolioContainer{ width: 700px; margin: 0 auto;}
-.portfolioContainer img { width:222px; height:160px;}
+.portfolioContainer{ width: 100%; margin: 0 auto;}
+.portfolioContainer img { width:245px; height:160px;}
 .portfolioContainer .isotope-item p {
     color: #fff;
     font-weight: bold;
@@ -34,4 +34,4 @@
     text-align: center;
 	margin: 0;
 }
-.slimScrollBar { background: #fff !important; opacity:0.8 !important; right: 23% !important; cursor:pointer;}
+.slimScrollBar { background: #fff !important; opacity:0.8 !important; cursor:pointer;}

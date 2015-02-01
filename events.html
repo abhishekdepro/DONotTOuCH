@@ -16,11 +16,10 @@
     <script src="http://static2.cdn.ubi.com/watchdogs/css3-mediaqueries.js"></script>
     <![endif]-->
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0;">
-        
-		<link rel="stylesheet" href="css/site.min.css">
         <link rel="stylesheet" href="css/video.css">
         <script type="text/javascript" src="js/site.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="asd/css/bootstrap.min.css">
+        <link rel="stylesheet" href="asd/css/bootstrap-responsive.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
       	<script src="js/jquery.min.js"></script>
       	<script src="js/bootstrap.js"></script>
@@ -42,9 +41,7 @@
         <script src="./home_files/new.js" type="text/javascript"></script>    
 
 <style>
-h1{
-    font-family: 'Yesteryear', arial, helvetica, sans;
-}
+
      #news-ticker {
                 position: relative;
                 height: 145px;
@@ -74,7 +71,7 @@ h1{
     margin-top:4%;
 
 }
-#eventBox{
+.eventBox{
     float:left;
     margin-left: 2%;
     margin-top: 5px;
@@ -128,45 +125,15 @@ h1{
 }
 #eContent{
     width:100%;
-    height:62%;
-    margin-top: 2%;
-    background: rgba(0,0,0,.2);
+    height:58%;
+	padding: 20px 0px 20px 20px;
 
-}
-#siteLogo{
-    background: url("./imgs/2k15.png");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-#top{
-    z-index: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-#box{
-    float:left;
-    height: 100%;
-    width:12%;
-    margin-left: 2%;
-    display: table-cell; 
-    vertical-align:middle;
-     text-align:center
-}
-
-#boxLeft{
-    float:left;
-    height: 100%;
-    width:7%;
-    margin-left: 2%;
-    display: table-cell; 
-    vertical-align:middle;
-     text-align:center
 }
 .active{
     background-color: rgba(255,255,255,.1);
 }
+
+a.thumbnail:hover {opacity:0.4;}
 table
 {
   height:100%;
@@ -176,6 +143,7 @@ h2,p{
   color:white;
 }
 </style>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
     <div class="bgvid">
@@ -183,45 +151,40 @@ h2,p{
             <source src="vid.webm" type="video/webm">
         </video>
     </div>
-	
-    
-    <div id="top" style="position:fixed;float:left;height:10%;width:100%;top:0px;left:0px;background:rgba(0,0,0,.7);" >
-
+	<div class="mywrapper">
+    <div id="top" style="height:10%;">
         <div id="boxLeft">
             <img src="./imgs/ts.png" width="100%" height="100%">
         </div>   
-        
         <div id="box">
-            <a href="media.html"><h1 >MEDIA</h1></a>
+            <a href="media.html"><h1>MEDIA</h1></a>
         </div>
         <div id="box">
             <a href="sponsors.html"><h1>SPONSORS</h1></a>
         </div>
-        <div id="box"></div>
-        <div id="boxLeft"></div>
-        
-         <div id="box" class="active">
-            <a href="events.html"><h1>EVENTS</h1></a>
+        <div id="box" style="margin-top:17px;">
+        <a href="home.html">
+            <img  src="./imgs/2k15.png" style="height:auto;">
+        </a>
         </div>
-        <div id="box" >
+         <div id="box">
+            <a href="events.html" class="active"><h1>EVENTS</h1></a>
+        </div>
+        <div id="box">
             <a href="schedule.html"><h1>SCHEDULE</h1></a>
         </div>
-        
-        
-        <div id="boxLeft" style="margin-right:2%;">
+        <div id="boxLeft">
             <img  src="./imgs/bppimt.png" width="70%" height="100%">
         </div>  
-
-             <a href="home.html"><div id="siteLogo" style="float:left;position:absolute;height:100%;width:20%;top:0%;left:40%;" ></div> </a>
-                   
         </div>
-        
-                
-               <div style="position:fixed;left:24%;width:52%;height:20%;bottom:2px;background: rgba(0, 0, 0, 0.4);">
+		</div>
+        <div class="clear"></div>
+               <div class="container"> 
+               <div style="position:absolute; left:0; right:0; margin: 0 auto; width:50%;height:20%;bottom:2px;background: rgba(0, 0, 0, 0.4);">
                <div class="portfolioFilter">
                     <a href="#" data-filter="*" class="current" style="display:none;">All Categories</a>
                     <a href="#" data-filter=".people">
-                    <div id="eventBox">
+                    <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="rovers">
                             <div class="flipper">
                                 <div class="front">
@@ -234,109 +197,166 @@ h2,p{
                         </div>
                     </div>
                     </a>
-                    <div id="eventBox">
+                    <a href="#" data-filter=".places">
+                    <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="gaming">
                             <div class="flipper">
                                 <div class="front">
-                                    <img src="./imgs/gaming.png" height="100%" width="100%"></a>
+                                    <img src="./imgs/gaming.png" height="100%" width="100%">
                                 </div>
                                 <div class="back">
-                                   <img src="./imgs/gamingb.jpg" height="100%" width="100%"></a>
+                                   <img src="./imgs/gamingb.jpg" height="100%" width="100%">
                                 </div>
                             </div>
                         </div>
                         
                     </div>
-                    <div id="eventBox">
+                    </a>
+                    <a href="#" data-filter=".food">
+                    <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="quizzard">
                             <div class="flipper">
                                 <div class="front">
-                                     <img src="./imgs/prof.png" height="100%" width="100%"></a>
+                                     <img src="./imgs/prof.png" height="100%" width="100%">
                                 </div>
                                 <div class="back">
-                                    <img src="./imgs/profb.jpg" height="100%" width="100%"></a>
+                                    <img src="./imgs/profb.jpg" height="100%" width="100%">
                                 </div>
                             </div>
                         </div>
                         
                        
                     </div>
-                    <div id="eventBox">
+                    </a>
+                    <a href="#" data-filter=".objects">
+                    <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="creativity">
                             <div class="flipper">
                                 <div class="front">
-                                   <img src="./imgs/creat.png" height="100%" width="100%"></a>
+                                   <img src="./imgs/creat.png" height="100%" width="100%">
                                 </div>
                                 <div class="back">
-                                   <img src="./imgs/creatb.jpg" height="100%" width="100%"></a>
+                                   <img src="./imgs/creatb.jpg" height="100%" width="100%">
                             </div>
                         </div>
                         </div>
                     </div>
-                    <div id="eventBox">
+                    </a>
+                    <a href="#" data-filter=".fantac">
+                    <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="prog">
                             <div class="flipper">
                                 <div class="front">
-                                    <img src="./imgs/prog.png" height="100%" width="100%"></a>
+                                    <img src="./imgs/prog.png" height="100%" width="100%">
                                 </div>
                                 <div class="back">
-                                   <img src="./imgs/progb.jpg" height="100%" width="100%"></a>
+                                   <img src="./imgs/progb.jpg" height="100%" width="100%">
                                 </div>
                             </div>
                         </div>
                         
                     </div>
+                    </a>
                </div>
 			   </div>
-			  <br><br><br>
                <div id="eContent">
                <div id="eContent_container">
-               <div class="portfolioContainer">
-                    <div class="objects">
-                        <a href="home.html" class="fancybox fancybox.iframe"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
-                        <p>Gandu Modon</p>
-                    </div>
+               <ul class="portfolioContainer thumbnails">
+                    <li class="objects">
+                        <a href="media.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                     </li>
                     
-                    <div class="people places">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
-                        <p>Gandu Modon1</p>
-                    </div>	
+                    <li class="people">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                    </li>	
                 
-                    <div class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                        <p>Gandu Modon2</p>
-                    </div>
+                    <li class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                    </li>
                     
-                    <div class="people places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
-                        <p>Gandu Modon3</p>
-                    </div>
+                    <li class="places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                    </li>
                     
-                    <div class="objects">
-                        <a href="home.html" class="fancybox fancybox.iframe"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
-                        <p>Gandu Modon</p>
-                    </div>
+                    <li class="objects">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                    </li>
                     
-                    <div class="people places">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
-                        <p>Gandu Modon1</p>
-                    </div>	
+                    <li class="people">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                    </li>	
                 
-                    <div class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                        <p>Gandu Modon2</p>
-                    </div>
+                    <li class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                    </li>
                     
-                    <div class="people places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
-                        <p>Gandu Modon3</p>
-                    </div>
+                    <li class="places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                    </li>
+                     <li class="objects">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="people">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                    </li>	
+                
+                    <li class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                    </li>
+                     <li class="objects">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="people places">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                    </li>	
+                
+                    <li class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="people places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                    </li>
+                     <li class="objects">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="people places">
+                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                    </li>	
+                
+                    <li class="food">
+                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="people places">
+                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                    </li>
+                    
+                    <li class="fantac">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/wine.jpg" alt="image"></a>
+                    </li>
+                    <li class="fantac">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/salad.jpg" alt="image"></a>
+                    </li>
+                    <li class="fantac">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/wine.jpg" alt="image"></a>
+                    </li>
+                    <li class="fantac">
+                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/salad.jpg" alt="image"></a>
+                    </li>
 					
-				</div>
+				</ul>
                 </div>
-				</div>
 </div>
-
+</div>
+</div>
 <link rel="stylesheet" href="jquery-isotope/css/style.css">
 <script src="jquery-isotope/js/jquery.isotope.js" type="text/javascript"></script>
 <!-- Add mousewheel plugin (this is optional) -->

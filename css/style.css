@@ -161,7 +161,7 @@
 body{
     font-family: ulTra; padding: 0; margin: 0;
 }
-.mywrapper {width: 1280px; margin: 0 auto; height: 100%;}
+.mywrapper {width: 1280px; margin: 0 auto;}
 h1{
     font-family: ulTra;
 }
@@ -241,7 +241,7 @@ ul{
     background: rgba(0,0,0,.4);
 }
 .active{
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.1); color:#fff;
 }
 .clear { clear: both; height: 10px; margin: 0; padding: 0 } 
 
@@ -267,7 +267,7 @@ ul{
 }
 
 @media screen and (min-width: 1024px) {
-  .mywrapper {width: 1024px; margin: 0 auto; height: 100%;}
+  .mywrapper {width: 1024px; margin: 0 auto;}
   .home_iframe {width: 480px; margin: 0px 35px; display: inline;}
   .home_iframe iframe {width: 480px; height: 400px;}
   #updateBox{ width: 300px;}
