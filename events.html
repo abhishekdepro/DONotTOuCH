@@ -152,38 +152,39 @@ h2,p{
         </video>
     </div>
 	<div class="mywrapper">
-    <div id="top" style="height:10%;">
-        <div id="boxLeft">
-            <img src="./imgs/ts.png" width="100%" height="100%">
+    <div id="top">
+        <div class="box">
+            <img src="./imgs/ts.png">
         </div>   
-        <div id="box">
-            <a href="media.html"><h1>MEDIA</h1></a>
+        <div class="box">
+            <a href="media.html" class="active"><h1>MEDIA</h1></a>
         </div>
-        <div id="box">
+        <div class="box">
             <a href="sponsors.html"><h1>SPONSORS</h1></a>
         </div>
-        <div id="box" style="margin-top:17px;">
+        <div class="box">
         <a href="home.html">
-            <img  src="./imgs/2k15.png" style="height:auto;">
+            <img  src="./imgs/2k15.png">
         </a>
         </div>
-         <div id="box">
-            <a href="events.html" class="active"><h1>EVENTS</h1></a>
+         <div class="box">
+            <a href="events.html"><h1>EVENTS</h1></a>
         </div>
-        <div id="box">
+        <div class="box">
             <a href="schedule.html"><h1>SCHEDULE</h1></a>
         </div>
-        <div id="boxLeft">
-            <img  src="./imgs/bppimt.png" width="70%" height="100%">
-        </div>  
+        <div class="box" style="float:right;">
+            <img  src="./imgs/bppimt.png">
         </div>
-		</div>
+         <div class="clear"></div>  
+        </div>
+	</div>
         <div class="clear"></div>
                <div class="container"> 
                <div style="position:absolute; left:0; right:0; margin: 0 auto; width:50%;height:20%;bottom:2px;background: rgba(0, 0, 0, 0.4);">
                <div class="portfolioFilter">
                     <a href="#" data-filter="*" class="current" style="display:none;">All Categories</a>
-                    <a href="#" data-filter=".people">
+                    <a href="#" data-filter=".rovers">
                     <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="rovers">
                             <div class="flipper">
@@ -197,7 +198,7 @@ h2,p{
                         </div>
                     </div>
                     </a>
-                    <a href="#" data-filter=".places">
+                    <a href="#" data-filter=".gaming">
                     <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="gaming">
                             <div class="flipper">
@@ -212,7 +213,7 @@ h2,p{
                         
                     </div>
                     </a>
-                    <a href="#" data-filter=".food">
+                    <a href="#" data-filter=".quizard">
                     <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="quizzard">
                             <div class="flipper">
@@ -228,7 +229,7 @@ h2,p{
                        
                     </div>
                     </a>
-                    <a href="#" data-filter=".objects">
+                    <a href="#" data-filter=".creativity">
                     <div class="eventBox">
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="creativity">
                             <div class="flipper">
@@ -262,95 +263,79 @@ h2,p{
                <div id="eContent">
                <div id="eContent_container">
                <ul class="portfolioContainer thumbnails">
-                    <li class="objects">
-                        <a href="media.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
-                     </li>
                     
-                    <li class="people">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
-                    </li>	
+                    <!-- Gaming Start -->
+                    <li class="gaming">
+                        <a href="imgs/gaming/fifa/fifa.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/gaming/fifa.jpg" alt="image"></a>
+                    </li>
+                     <li class="gaming">
+                        <a href="imgs/gaming/nfs/nfs.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/gaming/nfs.jpg" alt="image"></a>
+                    </li>
+                     <li class="gaming">
+                        <a href="imgs/gaming/khet.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/gaming/khet.jpg" alt="image"></a>
+                    </li>                    
+                    <!-- Gaming End -->
+                    
+                    
+                    <!-- Quizard Start -->
+                    <li class="quizard">
+                        <a href="imgs/quizard/arc.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/quizard/arc.jpg" alt="image"></a>
+                    </li>
+                    <li class="quizard">
+                        <a href="imgs/quizard/ino.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/quizard/ino.jpg" alt="image"></a>
+                    </li>
+                    <li class="quizard">
+                        <a href="imgs/quizard/ome.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/quizard/ome.jpg" alt="image"></a>
+                    </li>
+                    <li class="quizard">
+                        <a href="imgs/quizard/techno.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/quizard/techno.jpg" alt="image"></a>
+                    </li>
+                    <!-- Quizard End -->
+                    
+                    
+                    <!-- Creativity End -->
+                    <li class="creativity">
+                        <a href="imgs/creativity/35m.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/creativity/35m.jpg" alt="image"></a>
+                    </li>
+                    <li class="quizard">
+                        <a href="imgs/creativity/obj.jpeg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/creativity/obj.jpeg" alt="image"></a>
+                    </li>
+                    <li class="quizard">
+                        <a href="imgs/creativity/pwr.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/creativity/pwr.jpg" alt="image"></a>
+                    </li>
+                    <li class="quizard">
+                        <a href="imgs/creativity/tus.jpg" class="fancybox fancybox.iframe thumbnail"><img src="imgs/creativity/tus.jpg" alt="image"></a>
+                    </li>
+                    <!-- Creativity End -->                    
                 
-                    <li class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                    </li>
                     
-                    <li class="places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
+                    <!-- Rovers Start -->                    
+                    <li class="rovers">
+                        <a href="imgs/rovers/roBli/roBli.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/rovers/robli.jpg" alt="image"></a>
                     </li>
-                    
-                    <li class="objects">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
+                    <li class="rovers">
+                        <a href="imgs/rovers/roCom/roCom.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/rovers/roCom.jpg" alt="image"></a>
                     </li>
-                    
-                    <li class="people">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
+                    <li class="rovers">
+                        <a href="imgs/rovers/ronav/ronav.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/rovers/ronav.jpg" alt="image"></a>
+                    </li>
+                    <li class="rovers">
+                        <a href="imgs/rovers/rosoc/rosoc.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/rovers/ros.jpg" alt="image"></a>
+                    </li>
+                    <li class="rovers">
+                        <a href="imgs/rovers/rosp/rosp.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/rovers/rosp.jpg" alt="image"></a>
+                    </li>
+                    <li class="rovers">
+                        <a href="imgs/rovers/roter/roter.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/rovers/roter.jpg" alt="image"></a>
                     </li>	
+                    <!-- Rovers End -->
                 
-                    <li class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
-                    </li>
-                     <li class="objects">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="people">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
-                    </li>	
-                
-                    <li class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
-                    </li>
-                     <li class="objects">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="people places">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
-                    </li>	
-                
-                    <li class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="people places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
-                    </li>
-                     <li class="objects">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/watch.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="people places">
-                        <a href="jquery-isotope/images/surf.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/surf.jpg" alt="image"></a>
-                    </li>	
-                
-                    <li class="food">
-                        <a href="jquery-isotope/images/burger.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/burger.jpg" alt="image"></a>
-                    </li>
-                    
-                    <li class="people places">
-                        <a href="jquery-isotope/images/subway.jpg" class="fancybox thumbnail"><img src="jquery-isotope/images/subway.jpg" alt="image"></a>
-                    </li>
-                    
+                   
+                    <!-- Fanta-C Start -->
                     <li class="fantac">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/wine.jpg" alt="image"></a>
+                        <a href="imgs/programing/c.html" class="fancybox fancybox.iframe thumbnail"><img src="imgs/programing/c.jpg" alt="image"></a>
                     </li>
-                    <li class="fantac">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/salad.jpg" alt="image"></a>
-                    </li>
-                    <li class="fantac">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/wine.jpg" alt="image"></a>
-                    </li>
-                    <li class="fantac">
-                        <a href="home.html" class="fancybox fancybox.iframe thumbnail"><img src="jquery-isotope/images/salad.jpg" alt="image"></a>
-                    </li>
+                    <!-- Fanta-C End -->
 					
 				</ul>
                 </div>
