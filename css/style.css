@@ -236,6 +236,10 @@ ul{
     width: 300px;
     background: rgba(0,0,0,.4);
 }
+#play{
+  width: 800px;
+  height: 500px;
+}
 .active{
     background-color: rgba(255,255,255,.1); color:#fff;
 }
